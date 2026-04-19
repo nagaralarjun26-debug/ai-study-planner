@@ -1,7 +1,7 @@
 // TopicItem: Renders a single topic row with complete toggle, edit, and delete actions
 
-import React, { useState, useRef } from 'react';
-import { Topic } from '../services/firestoreService';
+import { useState, useRef } from 'react';
+import type { Topic } from '../services/firestoreService';
 import { useStudy } from '../context/StudyContext';
 import { deadlineLabel, formatDate } from '../utils/dateUtils';
 

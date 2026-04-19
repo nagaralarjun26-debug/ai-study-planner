@@ -1,7 +1,7 @@
 // AddSubjectForm: Controlled form to add a new subject
 // Lifted state: onAdd callback lifts the new subject name up to the parent
 
-import React, { useState } from 'react';
+import { useState, type FormEvent } from 'react';
 import { useStudy } from '../context/StudyContext';
 
 const AddSubjectForm = () => {
@@ -13,7 +13,7 @@ const AddSubjectForm = () => {
   const [error, setError] = useState('');
   const [showForm, setShowForm] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError('');
 

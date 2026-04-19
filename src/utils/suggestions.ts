@@ -2,7 +2,7 @@
 // Generates rule-based (AI-like) study suggestions based on topics and deadlines
 // No external AI API — purely deterministic logic
 
-import { Subject } from '../services/firestoreService';
+import type { Subject } from '../services/firestoreService';
 
 export interface Suggestion {
   id: string;

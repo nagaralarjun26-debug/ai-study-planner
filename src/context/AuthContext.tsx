@@ -1,20 +1,20 @@
 // AuthContext: Provides authentication state globally across the app
 // Uses Firebase Auth with onAuthStateChanged for persistent login
 
-import React, {
+import {
   createContext,
   useContext,
   useEffect,
   useState,
-  ReactNode,
 } from 'react';
+import type { ReactNode } from 'react';
 import {
-  User,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
 } from 'firebase/auth';
+import type { User } from 'firebase/auth';
 import { auth } from '../services/firebase';
 
 // ─── Types ─────────────────────────────────────────────────────────────────────

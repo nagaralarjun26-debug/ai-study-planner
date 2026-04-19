@@ -1,8 +1,7 @@
 // SuggestionCard: Displays a single AI-like study suggestion
 // Shows an icon, colored border, and the suggestion message
 
-import React from 'react';
-import { Suggestion } from '../utils/suggestions';
+import type { Suggestion } from '../utils/suggestions';
 
 interface SuggestionCardProps {
   suggestion: Suggestion;

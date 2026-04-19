@@ -9,11 +9,10 @@ import {
   deleteDoc,
   doc,
   query,
-  where,
   serverTimestamp,
   orderBy,
-  Timestamp,
 } from 'firebase/firestore';
+import type { Timestamp } from 'firebase/firestore';
 import { db } from './firebase';
 
 // ─── Type Definitions ──────────────────────────────────────────────────────────

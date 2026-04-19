@@ -1,7 +1,7 @@
 // Navbar: Top navigation bar shown on the dashboard
 // Shows the app name, user email, and a logout button
 
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { useAuth } from '../context/AuthContext';
 
 const Navbar = () => {

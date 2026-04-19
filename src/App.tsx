@@ -1,7 +1,6 @@
 // App.tsx: Root application component
 // Sets up React Router with public and protected routes
 
-import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';

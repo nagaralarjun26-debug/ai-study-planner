@@ -1,7 +1,6 @@
 // ProgressBar: Visual progress indicator for a subject or overall progress
 // Accepts a percentage (0-100) and renders an animated fill bar
 
-import React from 'react';
 
 interface ProgressBarProps {
   percentage: number;       // 0 to 100

@@ -1,7 +1,7 @@
 // DashboardPage: Main screen after login
 // Shows: welcome message, overall progress, smart suggestions, and all subject cards
 
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useStudy } from '../context/StudyContext';
 import Navbar from '../components/Navbar';

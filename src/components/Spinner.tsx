@@ -1,6 +1,5 @@
 // Spinner: Simple loading indicator used during async operations
 
-import React from 'react';
 
 interface SpinnerProps {
   size?: 'sm' | 'md' | 'lg';

@@ -1,7 +1,7 @@
 // AddTopicForm: Controlled form to add a new topic under a subject
 // Demonstrates: useState, controlled inputs, form submission
 
-import React, { useState } from 'react';
+import { useState, type FormEvent } from 'react';
 import { useStudy } from '../context/StudyContext';
 import { todayStr } from '../utils/dateUtils';
 
@@ -19,7 +19,7 @@ const AddTopicForm = ({ subjectId, onClose }: AddTopicFormProps) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError('');
 

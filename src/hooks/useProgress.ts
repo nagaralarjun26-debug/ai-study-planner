@@ -2,7 +2,7 @@
 // Calculates study progress from subjects state using useMemo (no extra Firestore reads)
 
 import { useMemo } from 'react';
-import { Subject } from '../services/firestoreService';
+import type { Subject } from '../services/firestoreService';
 
 export interface SubjectProgress {
   subjectId: string;

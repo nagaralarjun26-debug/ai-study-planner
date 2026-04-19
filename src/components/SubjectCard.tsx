@@ -1,8 +1,8 @@
 // SubjectCard: Full card for a subject showing its topics and progress
 // Includes expand/collapse, add topic form, and delete subject action
 
-import React, { useState, useCallback } from 'react';
-import { Subject } from '../services/firestoreService';
+import { useState, useCallback } from 'react';
+import type { Subject } from '../services/firestoreService';
 import { useStudy } from '../context/StudyContext';
 import TopicItem from './TopicItem';
 import AddTopicForm from './AddTopicForm';

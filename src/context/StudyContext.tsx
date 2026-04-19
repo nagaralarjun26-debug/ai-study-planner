@@ -1,16 +1,16 @@
 // StudyContext: Global state for subjects and topics
 // Manages fetching, adding, deleting, and toggling topics across the app
 
-import React, {
+import {
   createContext,
   useContext,
   useState,
   useEffect,
   useCallback,
-  ReactNode,
 } from 'react';
+import type { ReactNode } from 'react';
+import type { Subject } from '../services/firestoreService';
 import {
-  Subject,
   getSubjects,
   addSubject as fsAddSubject,
   deleteSubject as fsDeleteSubject,

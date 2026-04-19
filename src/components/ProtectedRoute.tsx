@@ -1,12 +1,12 @@
 // ProtectedRoute: Redirects unauthenticated users to /login
 // Wrap any route element with this to enforce authentication
 
-import React from 'react';
+import type { ReactNode } from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 interface ProtectedRouteProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
